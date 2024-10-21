@@ -1,0 +1,395 @@
+html, body{
+    width: 100%;
+    margin: 0px;
+    padding: 0px;
+}
+.top{
+    background-image: url(https://res.cloudinary.com/dcb9dddlg/image/upload/v1725521494/image-hero_wkigqu.jpg);
+    background-position: center;
+    background-repeat: no-repeat;
+    background-size: cover;
+    height: 500px;
+
+}
+.logo{
+    margin-left: 130px;
+}
+header{
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    padding: 20px;
+    
+    color: white;
+    
+}
+.desktop-nav{
+    position: relative;
+    
+
+}
+.desktop-nav ul{
+    text-decoration: none;
+    display: flex;
+    gap: 30px;
+    list-style: none;
+    
+
+}
+.mobile-menu-icon {
+    display: none;
+    font-size: 24px;
+}
+.hero{
+    width: 550px;
+    border: 2px solid #fff;
+    height: 180px;
+    margin-left: 160px;
+    margin-top: 37px;
+    
+}
+.hero-write{
+    color: white;
+    letter-spacing: 5px;
+    font-size: 27px;
+    position: relative;
+    bottom: 23px;
+    left: 30px;
+    text-transform: uppercase;   
+}
+/* VR Leader Section */
+.leader {
+    display: flex;
+    padding: 40px;
+    justify-content: space-around;
+    align-items: flex-end;
+    position: relative;
+    
+    
+}
+.leader-text{
+    background-color: white;
+    height: 200px;
+    position: absolute;
+    right: 260px;
+    padding-left: 50px;
+    padding-top: 50px;
+    bottom: 9px;
+    left: 400px;
+
+}
+.leader-text h2 {
+    /* font-size: 20px; */
+    font-family: Arial, sans-serif;
+    font-weight: 100;
+    margin-bottom: 20px;
+    letter-spacing: 5px;
+    text-transform: uppercase;
+
+    
+}
+
+.leader-text p {
+    font-size: 16px;
+    color: #555;
+    margin-bottom: 10px;
+    
+}
+.leader img {
+    width: 40%;
+    position: relative;
+    right: 350px;
+}
+/* Our Creations Section */
+.creations {
+    padding: 40px;
+    
+}
+
+.creations h2 {
+    /* margin-bottom: 20px; */
+    /* font-size: 32px; */
+    text-transform: uppercase;
+    font-weight: lighter;
+
+}
+
+.gallery {
+    display: grid;
+    grid-template-columns: repeat(4, 1fr);
+    gap: 20px;
+    row-gap: 0px;
+}
+
+
+.creation-text{
+    display: flex;
+    justify-content:space-between;
+    margin-bottom: 20px;
+    align-items: center;
+    
+}
+
+.creation img {
+    width: 100%;
+    height: auto;
+}
+
+.creation p {
+
+    font-size: 16px;
+    position: relative;
+    bottom: 120px;
+    color: white;
+    text-transform: uppercase;
+    left: 40px;
+    letter-spacing: 5px;
+}
+
+.see-all {
+    
+    
+    
+    background-color: white;
+    color:black;
+    border: 1px solid black;
+    cursor: pointer;
+    padding: 10px;
+    width: 130px;
+} 
+.social-icons img{
+    width: 24px;
+    background: transparent;
+}
+/* Footer */
+footer {
+    background-color: #000;
+    color: #fff;
+    padding: 40px;
+    
+}
+.footer-logo{
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+   
+}
+
+footer h1 {
+    font-size: 24px;
+    margin-bottom: 30px;
+}
+
+.footer-nav ul {
+    display: flex;
+    gap: 15px;
+    margin-bottom: 20px;
+    align-items: start;
+    margin-left: -40px;
+}
+
+.footer-nav li {
+    list-style: none;
+    cursor: pointer;
+}
+.footer-navs{
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    order: 3;
+}
+.social-icons{
+    order: 2;
+    gap: 10px;
+    display: flex;
+}
+.copy{
+    order: 4;
+}
+.footer-logos{
+    order: -1;
+}
+
+
+/* Mobile View */
+@media (max-width: 480px) {
+    .desktop-nav  {
+        display: none;
+    }
+    .mobile-menu-icon {
+        display: block;
+    }
+
+    /* .leader {
+       flex-direction: column; 
+       text-align: center;
+       max-width: 100%;
+    }
+
+    .leader img, .leader-text {
+        max-width: 100%;
+    }
+    .leader img{
+        width: cover;1
+    }
+
+    .gallery {
+        grid-template-columns: 1fr;
+    }
+    footer{
+        text-align: center;
+        grid-template-columns: 1fr;
+    }
+}
+
+ */
+ body{
+    display: flex;
+    flex-direction: column;
+    margin: 0;
+    padding: 0;
+ }
+ .logo{
+    position: relative;
+    right: 120px;
+ }
+ .leader{
+   flex-direction: column !important;
+   grid-template-columns: 1fr !important;
+
+
+ }
+ .hero{
+    margin: 0 auto;
+    padding: 5px;
+    width: 270px;
+    padding: 20px;
+    
+    
+    
+ }
+ .hero-write{
+    position: relative;
+    left: 0px;
+    font-size: 20px;
+    letter-spacing: 5px;
+
+    
+    
+    bottom: 0px;
+    left: 0px;
+ }
+ .leader-image{
+    width: 100% !important;
+    position: relative;
+    left: 0px;
+    right: 0px;
+    margin-top: 0px;
+    padding: 0px;
+    
+
+
+ }
+ 
+
+
+     
+ 
+ .gallery {
+    grid-template-columns: 1fr;
+    gap: 0px;
+    
+    
+}
+.gallery img{
+    height: 200px;
+}
+footer{
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+}
+.footer-logo{
+    display: flex;
+    justify-content: center;
+    text-align: center;
+    flex-direction: column;
+}
+
+.footer-navs{
+    display: flex;
+    justify-content: center;
+    text-align: center;
+    flex-direction: column;
+}
+.footer-nav ul{
+    display: flex;
+    justify-content: center;
+    text-align: center;
+    flex-direction: column;
+}
+.leader-text h2{
+    font-size: medium;
+    margin: 0;
+    padding: 0;
+
+}
+.leader-text br{
+    display: none;
+}
+.leader-text{
+    align-items: flex-start;
+    position: relative;
+    margin: 0;
+    padding: 0;
+    left: 4px;
+    top: 20px;
+}
+.creation-text{
+    justify-content: center;
+
+    flex-direction: column;
+    align-items: center;
+}
+
+.see-all{
+    position: relative;
+    top: 2200px;
+}
+.social-icons{
+    display: flex;
+    justify-content: center;
+    /* position: relative;
+    top: 180px; */
+    order: 2; 
+    margin: 10px 0; 
+    
+}
+.copy{
+    order: 3 !important;
+    margin-bottom: 10px; 
+    display: flex;
+    justify-content: center;
+    flex-direction: column;
+}
+
+
+.footer-nav{
+    order: 1 !important;
+    margin: 10px 0; 
+    display: flex;
+    justify-content: center;
+    flex-direction: column;
+}
+
+
+
+
+.footer-navs{
+    
+    flex-direction: column;
+
+}
+
+}
